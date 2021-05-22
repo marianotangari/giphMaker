@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/styleupload.css" id="tema">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>¡Bienvenidos/as a Guifos.com! — — — — — —Donde los gifs están.////// Número de visitas: 12.765.803</header>
+        
+    <div>
+        <a href="index.html"><img class="flecha" id="arrowEnlace" src="assets/arrow.svg" alt="flechita"></a> 
+        <img src="assets/gifOF_logo.png" alt="logo">
+    </div>
+    
+    <section class="instrucciones" id="paso1">
+        <div class="cuadrocrear">Crear Guifos</div>
+        <div class=cuadro>
+            <div class=imagenypasos>
+                <div class="juntos">
+                    <img src="assets/windowimg.png" alt="ventana">
+                    <p><b>Aquí podrás crear tus propios guifos</b></p>
+                </div> 
+                <p class="parrafo2">Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos <br>personalizados. Los pasos para crear tu guifo son:<br><br>
+                    <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+                    <b>2)</b> Capturar tu momento guifo<br>
+                    <b>3)</b> Revisar el momento<br>
+                    <b>4</b>) Listo para subir y compartir!<br><br>
+                    ¿Quieres comenzar a crear tu <b>guifo</b> ahora?</p>   
+                <div class="botones">
+                    <button class="btncancel">Cancelar</button>
+                    <button class="btnstart" onclick="getStreamAndRecord()">Comenzar</button>
+                </div>
+            </div>              
+        </div>
+    </section>
+
+    <section id="paso2">
+        <div class="cuadrochequeo" id="marcocheck">Un chequeo antes de empezar<img src="assets/button3.svg" alt="cruz"></div>  
+        <div class="cuadro2">
+            <div class="videocont" id="videodiv">
+                
+                <video class="video"></video>
+            </div> 
+            <div class="capturar" id="divcapturar">
+                <button class="botondecapt" id="botoncapt2"><img src="assets/camera.svg" id="imagencapturar" alt="camara"></button>
+                <button class="botoncapt" onclick="startRecord()" id="botoncapturar">Capturar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="paso3">
+        <div class="cuadrochequeo">Capturando tu Guifo<img src="assets/button3.svg" alt="cruz"></div>  
+        <div class="cuadro2">
+            <div class="videocont">
+                
+                <video class="video"></video>
+            </div> 
+            <div class="capturar">
+                <button class="botondecapt"><img src="assets/recording.svg" alt="camara"></button>
+                <button class="botoncapt" onclick="stopRecord()">Listo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="paso4">
+        <div class="cuadrochequeo">Vista Previa</div>  
+        <div class="cuadro2">
+            <div class="videocont" id="preview">
+            </div> 
+            <div class="capturar">
+                <button class="btncancel" onclick="getStreamAndRecord()">Repetir Captura</button>
+                <button class="btnstart" onclick="transicion()">Subir Guifo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="paso5">
+        <div class="cuadrochequeo">Subiendo Guifo<img src="assets/button3.svg" alt="cruz"></div>  
+        <div class="cuadro2">
+            <div class="videocont">
+                <div>
+                    <img src="assets/globe_img.png" alt="globo terraqueo">
+                    <div class="subiendo">Estamos subiendo tu guifo...<br></div>
+                </div>   
+            </div> 
+            <div class="capturar">
+                <button class="btncancel">Cancelar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="paso6">
+        <div class="cuadrochequeo">Guifo Subido Con Éxito<img src="assets/button3.svg" alt="cruz"></div>  
+        <div class="cuadro2">
+            <div class="videocont" id="preview2"></div>
+            
+            <div class="capturar">
+                <p class="guifoexito">Guifo creado con éxito</p>
+                <button class="btncancel" id="copiargif">Copiar Enlace Guifo</button>
+                <a class="btndescargar" id="descargargif">Descargar Guifo</a>
+                <button class="btnstart" id="botonlisto">Listo</button>
+            </div>    
+        </div>
+    </section>
+
+    <section id="seccionmisgifs">
+        <div class="misguifos">
+        Mis Guifos:
+        </div> 
+        <div id="galeria" class="galgif"></div>
+    
+    </section>
+
+    <script src="scripts/uploadjs.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/style.css" id="temaclaro">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="bienvenida">¡Bienvenidos/as a Guifos.com! — — — — — —Donde los gifs están.////// Número de visitas: 12.765.803</header>
+    
+    <section>
+        <nav class="menu">
+            <div class="contenedormenu">
+                <div class="logo">
+                    <img src="assets/gifOF_logo.png" alt="Logo gifos" id="imagelogo">
+                </div>
+                <div class="botones">
+                    <button class="boton1" id="enlaceupload">Crear Guifos</button>
+                    <div class="juntos">
+                        <button class= "boton2" onclick="displayThemes()" >Elegir tema</button>
+                        <button class="desplegable" id="arrow" onclick="displayThemes()"><img src="assets/dropdown.svg" alt="Botón desplegable" id="arrow2"></button>
+                        <div class="temas" id="menutemas" style="display:none">
+                            <div class="temadia" onclick="switchTheme('themedark')" id="themeday"><button><u>S</u>ailor Day</button></div>
+                            <div class="temanoche" onclick="switchTheme('themeday')" id="themedark"><button>Sailor Night</button></div>
+                        </div>
+                    </div>
+                    <a class="misgifs" href="upload.html#seccionmisgifs"><u>M</u>is Guifos</a>    
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="buscador">
+            <p>Buscar</p>
+        </div>
+        <div class="buscadorylupa">
+           <input id="inputbusqueda" type="text" name="name" 
+           placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" onkeydown="displaySearch()">
+            <div class="lupa" id="lupacambio">
+                <img src="assets/lupa_inactive.svg" alt="Lupa inactiva" id="imagelupa">
+                <a href="#trends" id="search">Buscar</a>
+            </div> 
+        </div>
+        <div class="busqueda" id="busquedasug">
+            <div class="buscuadro" id="busq1">Resultado de búsqueda sugerido</div>
+            <div class="buscuadro" id="busq2">Un resultado similar de búsqueda</div>
+            <div class="buscuadro" id="busq3">Y otro más</div>
+        </div>
+        <div id="busquedadin"></div>
+    </section>
+    
+    <div class="sugerencias">
+        Hoy te sugerimos:
+    </div>
+
+    <section>
+        <div class="cuadros">
+            <div class=cuadroscont>
+                <div class="titulosug">#Tarkovsky<img src="assets/button3.svg" alt="cruz"></div>
+                <div class="cuadrosug" id="Tarkovsky" onclick="getSearchResults('Tarkovsky')"><button class="botonver" type='button'>Ver más…</button></div>
+            </div>
+
+            <div class=cuadroscont>
+                <div class="titulosug" >#Koala<img src="assets/button3.svg" alt="cruz"></div>
+                <div class="cuadrosug" id="Koala" onclick="getSearchResults('Koala')"><button class="botonver">Ver más… </button></div>
+            </div>
+
+            <div class=cuadroscont>
+                <div class="titulosug" >#Piano<img src="assets/button3.svg" alt="cruz" ></div>
+                <div class="cuadrosug" id="piano" onclick="getSearchResults('Piano')"><button class="botonver">Ver más… </button></div>
+            </div>
+
+            <div class=cuadroscont>
+                <div class="titulosug" >#Mordor<img src="assets/button3.svg" alt="cruz"></div>
+                <div class="cuadrosug" id="Mordor" onclick="getSearchResults('mordor')"><button class="botonver">Ver más… </button></div>
+            </div>
+        </div>
+    </section>        
+            
+    <section id="trends" class="trending">
+        <div class="tendencias" id="cambio">
+            Tendencias:
+        </div>  
+    </section>
+
+    <section>  
+        
+        <div class='cuadrosGifs'>
+            <div class="cuadros">
+                <div class="cuadroscont">
+                    <div id="div0" class="cuadrosug"></div>
+                </div>
+                <div class="cuadroscont">
+                    <div id="div1" class="cuadrosug"></div>
+                </div>
+                <div  class="cuadroscont">
+                    <div id="div2" class="cuadrosug"></div>
+                </div>
+                <div  class="cuadroscont">
+                    <div id="div3" class="cuadrosug"></div>
+                </div>
+            </div>
+            <div class="cuadros">
+                <div  class="cuadroscont">
+                    <div id="div4" class="cuadrosug"></div>
+                </div>
+                <div  class="cuadroscont">
+                    <div id="div5" class="cuadrosug"></div>
+                </div>
+                <div  class="cuadroscont">
+                    <div id="div6" class="cuadrosug"></div>
+                </div>
+                <div  class="cuadroscont">
+                    <div id="div7" class="cuadrosug"></div>
+                </div>
+            </div>
+            <div class="cuadros">
+                <div  class="cuadroscont">
+                    <div id="div8" class="cuadrosug"></div>
+                </div>
+                <div class="cuadroscont">
+                    <div id="div9" class="cuadrosug"></div>
+                </div>
+                <div class="cuadroscont">
+                    <div id="div10" class="cuadrosug"></div>
+                </div>
+                <div class="cuadroscont">
+                    <div id="div11" class="cuadrosug"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>  
+    
+    <div id="contenido"></div>
+     
+    <script src="scripts/gifs.js"></script>    
+    
+</body>
+
+</html>

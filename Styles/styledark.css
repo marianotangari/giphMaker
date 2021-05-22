@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+body {
+  background-color: #13004d;
+  max-width: 1438px; }
+
+header {
+  font-family: 'Chakra Petch', sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  height: 23px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 0 0 #110038;
+  display: flex;
+  align-items: center;
+  padding-left: 7px; }
+
+section {
+  margin-left: 6%;
+  margin-right: 10%; }
+  section nav .contenedormenu {
+    display: flex;
+    justify-content: space-between; }
+    section nav .contenedormenu .botones {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      section nav .contenedormenu .botones .boton1 {
+        width: 144px;
+        height: 36px;
+        background-color: #EE3EFE;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 18px;
+        border: 1px solid #110038;
+        margin-right: 16px;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        cursor: pointer; }
+      section nav .contenedormenu .botones .boton1:hover {
+        background-color: #CE36DB;
+        border: 1px solid #110038;
+        outline: 1px dotted #110038;
+        outline-offset: -4px; }
+      section nav .contenedormenu .botones .boton1:active {
+        background-color: #CE36DB;
+        border: 1px dotted #110038;
+        outline: 1px dotted #110038;
+        outline-offset: -4px; }
+      section nav .contenedormenu .botones .juntos {
+        display: flex;
+        justify-content: space-between; }
+        section nav .contenedormenu .botones .juntos .boton2 {
+          width: 131px;
+          height: 36px;
+          background-color: #EE3EFE;
+          font-family: 'Chakra Petch', sans-serif;
+          font-size: 16px;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 18px;
+          border: 1px solid #110038;
+          margin: 0;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          cursor: pointer; }
+        section nav .contenedormenu .botones .juntos .boton2:hover {
+          background-color: #CE36DB;
+          border: 1px solid #110038;
+          outline: 1px dotted #110038;
+          outline-offset: -4px; }
+        section nav .contenedormenu .botones .juntos .boton2:active {
+          background-color: #CE36DB;
+          border: 1px dotted #110038;
+          outline: 1px dotted #110038;
+          outline-offset: -4px; }
+        section nav .contenedormenu .botones .juntos .temas {
+          width: 166px;
+          height: 100px;
+          background-color: #CCCCCC;
+          box-shadow: inset 0 0 0 #B4B4B4, inset 2px 0 0 0 #FFFFFF;
+          position: absolute;
+          margin-top: 36px; }
+          section nav .contenedormenu .botones .juntos .temas .temadia {
+            width: 140px;
+            height: 30px;
+            background-color: #E6E6E6;
+            border: 1px solid #CCA6C9;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center; }
+            section nav .contenedormenu .botones .juntos .temas .temadia button {
+              font-family: 'Chakra Petch', sans-serif;
+              font-size: 14px;
+              color: #110038;
+              background-color: transparent;
+              margin-left: 10px;
+              cursor: pointer; }
+          section nav .contenedormenu .botones .juntos .temas .temanoche {
+            width: 140px;
+            height: 30px;
+            background-color: #2E32FB;
+            border: 1px solid #CCA6C9;
+            margin-left: 10px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center; }
+            section nav .contenedormenu .botones .juntos .temas .temanoche button {
+              font-family: 'Chakra Petch', sans-serif;
+              font-size: 14px;
+              color: #FFFFFF;
+              margin-left: 10px;
+              background-color: transparent;
+              cursor: pointer; }
+            section nav .contenedormenu .botones .juntos .temas .temanoche button:active {
+              background-color: transparent;
+              color: #FFFFFF; }
+          section nav .contenedormenu .botones .juntos .temas .temanoche:active {
+            background-color: #2E32FB;
+            font-size: 14px;
+            color: #FFFFFF; }
+    section nav .contenedormenu .desplegable {
+      width: 36px;
+      height: 36px;
+      background-color: #EE3EFE;
+      border: 1px solid #110038;
+      margin-right: 16.5px;
+      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+      cursor: pointer; }
+    section nav .contenedormenu .desplegable:hover {
+      background-color: #CE36DB;
+      border: 1px solid #110038;
+      outline: 1px dotted #110038;
+      outline-offset: -4px; }
+    section nav .contenedormenu .desplegable:active {
+      background-color: #CE36DB;
+      border: 1px dotted #110038;
+      outline: 1px dotted #110038;
+      outline-offset: -4px; }
+    section nav .contenedormenu .misgifs {
+      display: flex;
+      align-items: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 18px;
+      background-color: transparent;
+      cursor: pointer; }
+    section nav .contenedormenu .misgifs:hover {
+      border: 1px dotted #FFFFFF; }
+    section nav .contenedormenu .misgifs:active {
+      color: #999966;
+      border: none; }
+
+section {
+  margin-left: 6%;
+  margin-right: 10%;
+  margin-top: 2.1%;
+  margin-bottom: 4%; }
+  section .buscador {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    display: flex;
+    align-items: center;
+    box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+    section .buscador p {
+      padding-left: 6px; }
+  section .buscadorylupa {
+    background-color: #B4B4B4;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 0 0 0 0 #FFFFFF; }
+    section .buscadorylupa input {
+      width: 980px;
+      height: 48px;
+      margin-top: 0.7%;
+      margin-right: 0.6%;
+      padding-left: 10px;
+      margin-bottom: 0.7%;
+      border: 1px solid #979797;
+      box-shadow: inset 2px 2px 0 0 #000000;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 16px;
+      color: #110038; }
+    section .buscadorylupa ::placeholder {
+      padding-left: 5px; }
+    section .buscadorylupa .lupa {
+      width: 100px;
+      height: 36px;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 16px;
+      color: #B4B4B4;
+      outline: none;
+      background-color: #B4B4B4;
+      margin-top: 1px;
+      cursor: pointer; }
+      section .buscadorylupa .lupa img {
+        margin-right: -10px;
+        color: #8F8F8F; }
+      section .buscadorylupa .lupa #search {
+        color: #8F8F8F; }
+    section .buscadorylupa .lupainput {
+      width: 100px;
+      height: 36px;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 16px;
+      color: #FFFFFF;
+      outline: none;
+      background-color: #EE3EFE;
+      margin-top: 1px;
+      cursor: pointer; }
+      section .buscadorylupa .lupainput img {
+        margin-right: -10px; }
+      section .buscadorylupa .lupainput #search {
+        color: #FFFFFF; }
+    section .buscadorylupa .lupaactive {
+      width: 100px;
+      height: 36px;
+      color: #E6E6E6;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 16px;
+      color: #FFFFFF;
+      outline: 1px dotted #110038;
+      outline-offset: -4px;
+      background-color: #EE3EFE;
+      margin-top: 1px;
+      cursor: pointer; }
+      section .buscadorylupa .lupaactive img {
+        margin-right: -10px; }
+      section .buscadorylupa .lupaactive #search {
+        color: #FFFFFF; }
+  section .busqueda {
+    width: 100%;
+    height: 135px;
+    background-color: #CCCCCC;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    padding-top: 15px;
+    display: none; }
+    section .busqueda .buscuadro {
+      width: 980px;
+      height: 30px;
+      margin-bottom: 10px;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+      margin-left: 18px;
+      display: flex;
+      align-items: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 14px;
+      color: #110038;
+      padding-left: 10px;
+      background-color: #E6E6E6;
+      cursor: pointer; }
+
+#busquedadin {
+  overflow: hidden;
+  margin-top: 15px; }
+  #busquedadin .resultados {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch';
+    height: 554px;
+    padding: 6px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 34px;
+    margin-top: 15px;
+    margin-right: 8px;
+    overflow: hidden; }
+
+#busq1:hover {
+  margin-bottom: 15px;
+  outline: 1px dotted #110038;
+  outline-offset: -4px; }
+
+#busq2:hover {
+  margin-bottom: 15px;
+  outline: 1px dotted #110038;
+  outline-offset: -4px; }
+
+#busq3:hover {
+  margin-bottom: 15px;
+  outline: 1px dotted #110038;
+  outline-offset: -4px; }
+
+.sugerencias {
+  margin-left: 6%;
+  margin-right: 10%;
+  background: #FFFAFE;
+  border: 1px solid #2E32FB;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+  height: 1.9%;
+  display: flex;
+  align-items: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  padding: 7px;
+  margin-bottom: 19px; }
+
+.cuadros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  .cuadros .cuadroscont {
+    display: inline-block;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+    .cuadros .cuadroscont .titulosug {
+      font-family: 'Chakra Petch', sans-serif;
+      color: #FFFFFF;
+      font-size: 14px;
+      background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+      width: 250px;
+      height: 22px;
+      box-shadow: 0 1px 0 0 #110038;
+      display: flex;
+      justify-content: space-between; }
+      .cuadros .cuadroscont .titulosug img {
+        padding-right: 4px; }
+    .cuadros .cuadroscont .cuadrosug {
+      width: 250px;
+      height: 250px;
+      background-color: transparent;
+      display: flex;
+      align-items: flex-end; }
+      .cuadros .cuadroscont .cuadrosug .botonver {
+        width: 81px;
+        height: 34px;
+        font-family: 'ChakraPetch', sans-serif;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        background: #2E32FB;
+        border: 1px solid #4C2F99;
+        box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: -10px;
+        z-index: 10;
+        position: absolute;
+        cursor: pointer; }
+
+.cuadrosug:hover {
+  border: 1px dotted #110038; }
+
+.trending .tendencias {
+  background: #FFFAFE;
+  border: 1px solid #2E32FB;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+  height: 1.9%;
+  display: flex;
+  align-items: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  padding: 7px;
+  margin-bottom: 19px;
+  width: 1120px; }
+
+.gifs {
+  display: inline-block;
+  width: 250px;
+  height: 254px;
+  padding: 0px; }
+
+#contenido {
+  display: flex; }
+
+.cuadrosGifs {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr; }
+  .cuadrosGifs .cuadros .cuadroscont .cuadrosug div {
+    position: absolute;
+    width: 18.5%;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    font-family: 'Chakra Petch';
+    font-size: 13px;
+    color: white;
+    z-index: 9999; }
+  .cuadrosGifs .cuadros .cuadroscont .cuadrosug div:hover {
+    position: absolute;
+    width: 18.5%;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    font-family: 'Chakra Petch';
+    font-size: 13px;
+    color: white;
+    z-index: 9999;
+    display: block; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+/*# sourceMappingURL=styledark.css.map */
